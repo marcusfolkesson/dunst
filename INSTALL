@@ -12,12 +12,10 @@ On Debian and Debian-based distros you'll probably also need the *-dev packages.
 
 With all dependencies present you can build dunst with:
 
-    $ make
-
-If you're getting compilation errors after an update try compiling
-with the default config.h.
-If you didn't edit your config.h you can just delete it.
+    $ mkdir build
+	$ cmake ../
+	$ make
 
 and install with:
 
-    $ sudo make PREFIX=/usr install
+    $ sudo make install

@@ -1,5 +1,8 @@
 /* see example dunstrc for additional explanations about these options */
 
+#ifndef _CONFIG_H
+#define _CONFIG_H
+
 char *font = "-*-terminus-medium-r-*-*-16-*-*-*-*-*-*-*";
 bool allow_markup = false;
 bool plain_text = true;
@@ -100,3 +103,6 @@ rule_t default_rules[] = {
         /* { "rule4", "Pidgin",       "*signed off*",  NULL,  NULL, NULL,     -1,          -1,       LOW,      -1,           -1,         NULL,     NULL, NULL,      NULL,    NULL    }, */
         /* { "rule5", NULL,           "*foobar*",      NULL,  NULL, NULL,     -1,          -1,       -1,       -1,           -1,         NULL,     NULL, "#00FF00", NULL,    NULL }, */
 };
+
+
+#endif //_CONFIG_H
