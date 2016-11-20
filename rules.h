@@ -1,5 +1,7 @@
 /* copyright 2013 Sascha Kruse and contributors (see LICENSE for licensing information) */
-#pragma once
+
+#ifndef _RULES_H
+#define _RULES_H
 
 #include <glib.h>
 
@@ -34,3 +36,5 @@ void rule_init(rule_t * r);
 void rule_apply(rule_t * r, notification * n);
 void rule_apply_all(notification * n);
 bool rule_matches_notification(rule_t * r, notification * n);
+
+#endif //_RULES_H

@@ -1,5 +1,7 @@
 /* copyright 2013 Sascha Kruse and contributors (see LICENSE for licensing information) */
-#pragma once
+
+#ifndef _OPTION_PARSER_H
+#define _OPTION_PARSER_H
 
 #include <stdio.h>
 
@@ -33,4 +35,5 @@ int option_get_bool(char *ini_section, char *ini_key, char *cmdline_key,
  */
 char *next_section(char *section);
 
+#endif //_OPTION_PARSER_H
 /* vim: set ts=8 sw=8 tw=0: */

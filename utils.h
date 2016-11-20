@@ -1,6 +1,6 @@
 /* copyright 2013 Sascha Kruse and contributors (see LICENSE for licensing information) */
-#ifndef UTIL_H
-#define UTIL_H
+#ifndef _UTIL_H
+#define _UTIL_H
 
 /* replace all occurences of the character needle with the character replacement in haystack */
 char *string_replace_char(char needle, char replacement, char *haystack);
@@ -21,6 +21,7 @@ char **string_to_argv(const char *s);
 void die(char *msg, int exit_value);
 
 int digit_count(int i);
-#endif
+
+#endif // _UTIL_H
 
 /* vim: set ts=8 sw=8 tw=0: */

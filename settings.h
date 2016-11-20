@@ -1,5 +1,7 @@
 /* copyright 2013 Sascha Kruse and contributors (see LICENSE for licensing information) */
-#pragma once
+
+#ifndef _SETTINGS_H
+#define _SETTINGS_H
 
 typedef struct _settings {
         bool print_notifications;
@@ -61,3 +63,5 @@ typedef struct _settings {
 extern settings_t settings;
 
 void load_settings(char *cmdline_config_path);
+
+#endif //_SETTINGS_H

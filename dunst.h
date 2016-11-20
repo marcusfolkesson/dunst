@@ -1,6 +1,7 @@
 /* copyright 2013 Sascha Kruse and contributors (see LICENSE for licensing information) */
 
-#pragma once
+#ifndef _DUNST_H
+#define _DUNST_H
 
 #include <glib.h>
 #include <stdbool.h>
@@ -43,4 +44,6 @@ char *extract_urls(const char *str);
 void context_menu(void);
 void wake_up(void);
 void pause_signal_handler(int sig);
+
+#endif //_DUNST_H
 /* vim: set ts=8 sw=8 tw=0: */
