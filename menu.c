@@ -59,6 +59,8 @@ char *extract_urls(const char *to_match)
                 finish = m.rm_eo + (p - to_match);
 
                 char *match = strndup(to_match + start, finish - start);
+		if (!match)
+			break;
 
                 urls = string_append(urls, match, "\n");
 
