@@ -205,12 +205,12 @@ void context_menu(void)
         if (pid == 0) {
                 close(child_io[1]);
                 close(parent_io[0]);
-                close(0);
+                close(STDIN_FILENO);
                 if (dup(child_io[0]) == -1) {
                         PERR("dup()", errno);
                         exit(EXIT_FAILURE);
                 }
-                close(1);
+                close(STDOUT_FILENO);
                 if (dup(parent_io[1]) == -1) {
                         PERR("dup()", errno);
                         exit(EXIT_FAILURE);
