@@ -43,6 +43,21 @@ else()
 endif()
 
 
+#Applications used by Dunst
+set( APP_DMENU "/usr/bin/dmenu"
+	CACHE STRING "Path to dmenu"
+	)
+add_definitions(-DAPP_DMENU="${APP_DMENU}")
+
+set( APP_BROWSER "/usr/bin/firefox"
+	CACHE STRING "Path to web browser"
+	)
+add_definitions(-DAPP_BROWSER="${APP_DMENU}")
+
+set( ICON_FOLDERS "/usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/"
+	CACHE STRING "Path icon folders. Multiple folders may be listed with comma-seperation"
+	)
+add_definitions(-DICON_FOLDERS="${APP_DMENU}")
 
 #Targets
 add_executable(dunst

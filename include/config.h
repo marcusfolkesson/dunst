@@ -55,12 +55,12 @@ int startup_notification = False;
 int monitor = 0;
 
 /* path to dmenu */
-char *dmenu = "/usr/bin/dmenu";
+char *dmenu = APP_DMENU;
 
-char *browser = "/usr/bin/firefox";
+char *browser = APP_BROWSER;
 
 /* paths to default icons */
-char *icon_folders = "/usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/";
+char *icon_folders = ICON_FOLDERS;
 
 /* follow focus to different monitor and display notifications there?
  * possible values:
