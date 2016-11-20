@@ -35,6 +35,8 @@ static int ini_get_urgency(char *section, char *key, int def)
 {
         int ret = def;
         char *urg = ini_get_string(section, key, "");
+        if (!urg)
+		return ret;
 
         if (strlen(urg) > 0) {
                 if (strcmp(urg, "low") == 0)
